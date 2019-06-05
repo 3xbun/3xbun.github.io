@@ -36,13 +36,29 @@
   </head>
   <body>
     <nav>
-      <a href="/">
-        <img src="img/logo.svg" alt="3xbun-logo" class="logo" />
-      </a>
+      <div class="logo">
+        <a href="/">
+          <img src="img/logo.svg" alt="3xbun-logo" class="logo" />
+        </a>
+      </div>
+
+      <div class="float">
+        <a onclick="toggleMenu()"
+          ><ion-icon name="add" class="button"></ion-icon
+        ></a>
+
+        <ul id="menu">
+          <li><a href="/" class="current">หน้าแรก</a></li>
+          <li><a href="/about.html">เกี่ยวกับเรา</a></li>
+          <li><a href="#">ผลงาน</a></li>
+          <li><a href="#">บล็อก</a></li>
+          <li><a href="#">ติดต่อ</a></li>
+        </ul>
+      </div>
 
       <ul>
         <li><a href="/" class="current">หน้าแรก</a></li>
-        <li><a href="#">เกี่ยวกับเรา</a></li>
+        <li><a href="/about.html">เกี่ยวกับเรา</a></li>
         <li><a href="#">ผลงาน</a></li>
         <li><a href="#">บล็อก</a></li>
         <li><a href="#">ติดต่อ</a></li>
@@ -90,5 +106,6 @@
     </section>
 
     <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
