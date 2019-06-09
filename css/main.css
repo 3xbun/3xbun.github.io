@@ -82,6 +82,7 @@ nav ul .current {
 }
 
 .float {
+  visibility: hidden;
   position: fixed;
   width: 60px;
   height: 60px;
@@ -112,7 +113,8 @@ nav ul .current {
 }
 
 .float ul {
-  visibility: hidden;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   position: fixed;
   bottom: 0;
   right: 0;
@@ -133,6 +135,8 @@ nav ul .current {
           box-shadow: 0px 0px 5px 0px #999;
   opacity: 0.8;
   z-index: -1;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 .float ul li {
@@ -165,6 +169,9 @@ nav ul .current {
 }
 
 @media screen and (max-width: 768px) {
+  .float {
+    visibility: visible;
+  }
   nav {
     margin-top: 2rem;
     height: 3em;
@@ -178,7 +185,7 @@ nav ul .current {
   nav img {
     padding-left: 15px;
   }
-  nav ul {
+  nav #nav {
     visibility: hidden;
   }
   .social-media {
@@ -213,7 +220,7 @@ nav ul .current {
 }
 
 .hero .social-media {
-  margin: 1em auto;
+  margin: 2em auto;
   height: 2em;
   width: 30vh;
   display: -webkit-box;

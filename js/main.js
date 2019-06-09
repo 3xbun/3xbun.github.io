@@ -5,11 +5,11 @@ var state = true
 const toggleMenu = () => {
   if (state) {
     button.style.transform = "rotate(45deg)"
-    menu.style.visibility = "visible"
+    menu.style.transform = "translateX(0%)"
     state = false
   } else {
     button.style.transform = "rotate(90deg)"
-    menu.style.visibility = "hidden"
+    menu.style.transform = "translateX(100%)"
     state = true
   }
 }
