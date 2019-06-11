@@ -16,15 +16,23 @@ a {
 }
 
 body {
-  height: 100%;
+  height: 100vh;
   font-family: "Prompt", sans-serif;
   font-weight: 200;
 }
 
+.container {
+  width: 80vw;
+  margin: auto;
+  max-width: 800px;
+}
+
 nav {
-  max-width: 80vw;
   height: 3em;
-  margin: 1em auto;
+  padding: 1em;
+}
+
+nav .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -33,10 +41,10 @@ nav {
           justify-content: space-between;
 }
 
-nav ul {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+nav .container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
@@ -45,11 +53,11 @@ nav ul {
           align-items: center;
 }
 
-nav ul li {
+nav .container ul li {
   margin-left: 1em;
 }
 
-nav ul li::after {
+nav .container ul li::after {
   content: "";
   display: block;
   width: 0;
@@ -59,13 +67,13 @@ nav ul li::after {
   transition: all 0.3s ease-out;
 }
 
-nav ul li:hover::after {
+nav .container ul li:hover::after {
   width: 100%;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
 
-nav ul .current {
+nav .container ul .current {
   border-bottom: solid #000 1px;
 }
 
@@ -74,11 +82,6 @@ nav ul .current {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-}
-
-.container {
-  width: 80vw;
-  margin: auto;
 }
 
 .float {
@@ -143,22 +146,6 @@ nav ul .current {
   margin: 1em;
 }
 
-.float ul li::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: #fff;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
-.float ul li:hover::after {
-  width: 100%;
-  -webkit-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-
 .float ul .current {
   border-bottom: solid #fff 2px;
 }
@@ -200,6 +187,7 @@ nav ul .current {
 .hero {
   margin: 25vh 1em;
   text-align: center;
+  height: calc(100vh - 50%);
 }
 
 .hero h3 {
