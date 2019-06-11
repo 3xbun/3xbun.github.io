@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Anniversary</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/ig.css" />
+  </head>
+  <body onload="annyCounter()">
+    <section id="header">
+      <div class="container">
+        <h1 class="title">
+          เราคบกันมาแล้ว
+        </h1>
+        <h2 class="subtitle">
+          เพราะความรักคือการดูแลกัน ไม่ใช่การจำวันครบรอบ
+        </h2>
+      </div>
+    </section>
+    <section id="timer">
+      <div class="container">
+        <ul id="main">
+          <li><span id="years"></span>ปี</li>
+          <li><span id="months"></span>เดือน</li>
+          <li><span id="days"></span>วัน</li>
+        </ul>
+        <ul id="sub">
+          <li><span id="hours"></span>ชั่วโมง</li>
+          <li><span id="minutes"></span>นาที</li>
+          <li><span id="seconds"></span>วินาที</li>
+        </ul>
+        <a href="#gallery" class="animated arrow infinite swing ">V</a>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div
+        class="embedsocial-instagram"
+        data-ref="48395c647c98fe8adb864df6cced6f161881b9f6"
+      >
+        <div class="block-left"></div>
+      </div>
+      <script>
+        ;(function(d, s, id) {
+          let js
+          if (d.getElementById(id)) {
+            return
+          }
+          js = d.createElement(s)
+          js.id = id
+          js.src = "https://embedsocial.com/embedscript/in.js"
+          d.getElementsByTagName("head")[0].appendChild(js)
+        })(document, "script", "EmbedSocialInstagramScript")
+      </script>
+
+      <div
+        class="embedsocial-instagram block"
+        data-ref="cf7f883f136451e6109a6fad2338adafc1c61a48"
+      >
+        <div class="block"></div>
+      </div>
+      <script>
+        ;(function(d, s, id) {
+          var js
+          if (d.getElementById(id)) {
+            return
+          }
+          js = d.createElement(s)
+          js.id = id
+          js.src = "https://embedsocial.com/embedscript/in.js"
+          d.getElementsByTagName("head")[0].appendChild(js)
+        })(document, "script", "EmbedSocialInstagramScript")
+      </script>
+    </section>
+
+    <section id="footer">
+      Copyright &copy; 3xbun | Bunnasorn Kaewsiri
+    </section>
+
+    <script src="https://unpkg.com/moment"></script>
+    <script src="anniversary.js"></script>
+  </body>
+</html>
