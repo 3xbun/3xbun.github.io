@@ -31,145 +31,29 @@
       href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/main.css" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
     <title>3xbun Studio</title>
   </head>
   <body>
-    <nav>
-      <div class="container">
-        <div class="logo">
-          <a href="/">
-            <img src="img/logo.svg" alt="3xbun-logo" class="logo" />
-          </a>
-        </div>
-
-        <ul id="nav">
-          <li>
-            <a
-              href="#index"
-              class="current"
-              id="index-link"
-              onclick="changeHighlight(this.getAttribute('href'))"
-              >หน้าแรก</a
-            >
-          </li>
-          <li>
-            <a
-              href="#about"
-              id="about-link"
-              onclick="changeHighlight(this.getAttribute('href'))"
-              >เกี่ยวกับเรา</a
-            >
-          </li>
-          <li>
-            <a
-              href="#work"
-              id="work-link"
-              onclick="changeHighlight(this.getAttribute('href'))"
-              >ผลงาน</a
-            >
-          </li>
-          <li>
-            <a
-              href="#contact"
-              id="contact-link"
-              onclick="changeHighlight(this.getAttribute('href'))"
-              >ติดต่อ</a
-            >
-          </li>
-          <li><a href="https://medium.com/@3xbun" target="_blank">บล็อก</a></li>
-        </ul>
-      </div>
-
-      <div class="float">
-        <a onclick="toggleMenu()"
-          ><ion-icon name="add" class="button"></ion-icon
-        ></a>
-
-        <ul id="menu">
-          <li>
-            <a
-              href="#index"
-              class="current"
-              id="index-link"
-              onclick="changeHighlight(this.getAttribute('href'))"
-              >หน้าแรก</a
-            >
-          </li>
-          <li>
-            <a
-              href="#about"
-              id="about-link"
-              onclick="changeHighlight(this.getAttribute('href'))"
-              >เกี่ยวกับเรา</a
-            >
-          </li>
-          <li>
-            <a
-              href="#work"
-              id="work-link"
-              onclick="changeHighlight(this.getAttribute('href'))"
-              >ผลงาน</a
-            >
-          </li>
-          <li>
-            <a
-              href="#contact"
-              id="contact-link"
-              onclick="changeHighlight(this.getAttribute('href'))"
-              >ติดต่อ</a
-            >
-          </li>
-          <li><a href="https://medium.com/@3xbun" target="_blank">บล็อก</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <section class="hero" id="home">
-      <h3>สวัสดี...</h3>
-      <h1>เราชื่อ <span class="name">"บรร"</span></h1>
-      <p>Designer | Web Developer | Photographer</p>
-
-      <div class="social-media">
-        <a href="https://facebook.com/3xbun" target="_blank" class="facebook">
-          <object
-            data="/img/social/facebook-logo.svg"
-            type="image/svg+xml"
-            class="facebook icon"
-          ></object>
-        </a>
-
-        <a href="https://twitter.com/3xbunn" target="_blank">
-          <object
-            data="/img/social/twitter-logo.svg"
-            type="image/svg+xml"
-            class="twitter icon"
-          ></object>
-        </a>
-
-        <a href="https://instagram.com/3xbun" target="_blank">
-          <object
-            data="/img/social/instagram-logo.svg"
-            type="image/svg+xml"
-            class="instagram icon"
-          ></object>
-        </a>
-
-        <a href="https://github.com/3xbun" target="_blank">
-          <object
-            data="/img/social/github-logo.svg"
-            type="image/svg+xml"
-            class="github icon"
-          ></object>
-        </a>
-      </div>
-    </section>
-
-    <section id="about">
-      <h1>About</h1>
-    </section>
-
-    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
-    <script src="js/main.js"></script>
+    <div class="container" style="width: 100vw">
+      <img src="./img/maintenence.png" alt="maintenence-image" />
+    </div>
   </body>
 </html>
