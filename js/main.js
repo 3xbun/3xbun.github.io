@@ -21,6 +21,4 @@ const changeHighlight = href => {
   let oldCurrent = document.querySelectorAll(".current");
   oldCurrent.forEach(link => link.classList.remove("current"));
   newCurrent.forEach(link => link.classList.add("current"));
-
-  // console.log(newCurrent);
 };
