@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Meow+Script&family=Montserrat:wght@300&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --red: #bb2528;
+  --green: #146b31;
+  --dark-red: #ab0000;
+  --dark-green: #165b33;
+  --white: #f1e2cb;
+  --gold: #dbc683;
+}
+
+body {
+  background-color: var(--red);
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 8vh;
+  padding: 1em;
+  font-size: 0.5em;
+  text-align: center;
+  /* background-color: var(--red); */
+}
+
+#candle-light {
+  position: fixed;
+  top: 2vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 15vh;
+  background-color: var(--red);
+  padding: 1em;
+  border-radius: 50%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--red);
+}
+
+.content {
+  width: 80vw;
+  margin: auto;
+  padding-top: 3em;
+  text-align: center;
+}
+
+.btn {
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+#quoteBackground {
+  margin: 0.5em auto 1em;
+  width: 80vw;
+  height: 80vh;
+  overflow: hidden;
+  background-color: var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#image {
+  height: 100%;
+}
+
+#quote {
+  width: 80vw;
+  margin: auto;
+  background-color: blanchedalmond;
+  border-radius: 0.5em;
+  font-size: 1.2em;
+  padding: 0.5em 1em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  text-align: justify;
+  text-justify: inter-word;
+  text-indent: 2em;
+  margin-bottom: 3em;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  padding: 1em;
+  font-size: 0.5em;
+  text-align: center;
+  background-color: var(--dark-red);
+  color: var(--white);
+  box-shadow: rgba(0, 0, 0, 0.35) 5px 0px 15px;
+}
+
+.merry {
+  font-size: 2em;
+  font-family: "Meow Script", cursive;
+  display: inline-block;
+}
+
+.red {
+  display: inline-block;
+  color: var(--gold);
+}

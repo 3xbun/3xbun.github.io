@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Random Quotes</title>
+  </head>
+  <body onload="randomQuote()">
+    <header>
+      <img src="./img/candle-light.png" id="candle-light" />
+    </header>
+    <div class="background">
+      <div class="content">
+        <div id="quoteBackground">
+          <img id="image" src="" alt="" />
+        </div>
+
+        <div id="quote"></div>
+        <br />
+      </div>
+    </div>
+    <footer>
+      Made with
+      <div class="red"><i class="fa-solid fa-heart"></i></div>
+      for Materdei School. <br />
+      <div class="merry">Merry Cristmas 2021.</div>
+      <br />
+      &copy; Copyright 2021, Bunnasorn Kaewsiri. No Rights Reserved
+    </footer>
+  </body>
+
+  <script>
+    const quote = document.querySelector("#quote");
+    const quoteBackground = document.querySelector("#image");
+
+    const quotes = [
+      "The secret to creativity is knowing how to hide your sources.",
+      "Do not consider painful what is good for you.",
+      "Be careful that victories do not carry the seed of future defeats.",
+      "A diplomat... is a person who can tell you to go to hell in such a way that you actually look forward to the trip.",
+      "He was one of those men who think that the world can be saved by writing a pamphlet.",
+      "Someone's boring me. I think it's me.",
+      "In America any boy may become President and I suppose it's just one of the risks he takes.",
+      "Nostalgia isn't what it used to be.",
+      "Someone's boring me. I think it's me.",
+      "So long as we live among men, let us cherish humanity.",
+    ];
+
+    const background = [
+      "background1.jpg",
+      "background2.jpg",
+      "background3.jpg",
+    ];
+
+    const randomQuote = () => {
+      quote.innerHTML = quotes[Math.floor(Math.random() * quotes.length)];
+      quoteBackground.src = `./img/${
+        background[Math.floor(Math.random() * background.length)]
+      }`;
+    };
+  </script>
+</html>
