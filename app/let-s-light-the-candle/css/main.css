@@ -53,6 +53,7 @@ header {
 
 .content {
   width: 80vw;
+  max-width: 400px;
   margin: auto;
   padding-top: 3em;
   text-align: center;
@@ -65,10 +66,11 @@ header {
 
 #quoteBackground {
   margin: 0.5em auto 1em;
+  max-width: 400px;
   width: 80vw;
   height: 80vh;
   overflow: hidden;
-  background-color: var(--red);
+  background-color: var(--green);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,4 +117,30 @@ footer {
 .red {
   display: inline-block;
   color: var(--gold);
+}
+
+/* Big Screen */
+@media screen and (min-width: 600px) {
+  footer {
+    font-size: 0.8em;
+  }
+
+  .background .content {
+    max-width: 1600px;
+  }
+
+  #image {
+    width: 100%;
+    height: auto;
+  }
+
+  .quote {
+    display: flex;
+  }
+
+  #quote {
+    max-width: 300px;
+    margin-bottom: 25vh;
+    margin-right: 10vw;
+  }
 }
