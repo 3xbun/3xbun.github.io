@@ -15,6 +15,7 @@
     <style>
       body {
         background-color: var(--green);
+        background-image: url("./img/paper.png");
       }
 
       h1 {
@@ -29,14 +30,23 @@
         box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
           rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
         padding: 3em 1em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
       }
 
       img {
-        height: 50vh;
-        margin: auto;
-        position: absolute;
-        left: 0;
-        right: 0;
+        width: 150%;
+        height: auto;
+      }
+
+      .candle {
+        width: 100%;
+      }
+
+      .candle a {
+        display: flex;
+        justify-content: center;
       }
 
       footer {
@@ -49,7 +59,9 @@
     <div class="content">
       <h1>LET'S LIGHT THE CANDLE</h1>
       <br />
-      <a href="./quotes.html"><img src="./img/candle.png" alt="candle" /></a>
+      <div class="candle">
+        <a href="./quotes.html"><img src="./img/candle.png" alt="candle" /></a>
+      </div>
     </div>
 
     <footer>
