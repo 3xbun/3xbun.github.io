@@ -68,6 +68,7 @@ header {
 #quoteBackground {
   margin: 0.5em auto 1em;
   max-width: 400px;
+  max-height: fit-content;
   width: 80vw;
   height: 80vh;
   overflow: hidden;
@@ -77,12 +78,11 @@ header {
   align-items: center;
   border-radius: 0.5em;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  max-height: 650px;
 }
 
 #image {
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
 
 #quote {
@@ -133,15 +133,15 @@ footer {
     max-width: 800px;
   }
 
-  #image {
-    width: 100%;
-    height: auto;
-  }
-
   .quote {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+  }
+
+  #quoteBackground {
+    height: 70vh;
+    width: 20vw;
   }
 
   #quote {
