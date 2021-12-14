@@ -48,7 +48,7 @@ header {
   width: 100vw;
   height: 100vh;
   background-color: var(--red);
-  display: flex;
+  /* display: flex; */
 }
 
 .content {
@@ -66,17 +66,7 @@ header {
 
 #quoteBackground {
   margin: 0.5em auto 1em;
-  max-width: 400px;
-  max-height: fit-content;
-  width: 80vw;
-  height: 80vh;
-  overflow: hidden;
   background-color: var(--white);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 0.5em;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 #image {
@@ -139,8 +129,10 @@ footer {
   }
 
   #quoteBackground {
+    margin-top: 3em;
     height: 70vh;
-    width: 20vw;
+    width: 30vw;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   }
 
   #quote {
