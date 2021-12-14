@@ -67,6 +67,9 @@ header {
 #quoteBackground {
   margin: 0.5em auto 1em;
   background-color: var(--white);
+  border-radius: 0.5em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  overflow: hidden;
 }
 
 #image {
