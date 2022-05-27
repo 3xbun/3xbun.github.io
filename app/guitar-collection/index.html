@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3xbun's Guitar Collection</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <div id="app">
@@ -18,17 +25,15 @@
             </h1>
           </div>
           <div class="newGuitar">
-            <p class="new">NEW!</p>
-            <p class="view">VIEW</p>
-            <img :src="collection.at(-1).img" alt="guitar" />
+            <img :src="randomGuitar.img" alt="guitar" />
           </div>
           <div class="randGuitar">
-            <h1>RANDOM</h1>
+            <h1>NEW!</h1>
             <div class="card">
               <div class="card-img">
-                <img src="./img/guitar mockup.png" alt="random-guitar" />
+                <img :src="collection.at(-1).img" alt="random-guitar" />
               </div>
-              <p>Random Guitar</p>
+              <p>{{collection.at(-1).model}}</p>
             </div>
           </div>
         </div>
@@ -39,7 +44,11 @@
         <ul class="guitar-list">
           <li v-for="guitar in collection" :key="guitar.id" class="item">
             <div class="item-img">
-              <img :src="guitar.img" />
+              <div v-if="guitar.isNotBelong" class="sold-out">Sold</div>
+              <img
+                :class="{ greyScale: !guitar.isBelonged }"
+                :src="guitar.img"
+              />
             </div>
             <p>{{guitar.model}}</p>
           </li>
@@ -73,7 +82,9 @@
 
       createApp({
         setup() {
-          return { collection };
+          const randomGuitar =
+            collection[Math.floor(Math.random() * collection.length)];
+          return { collection, randomGuitar };
         },
       }).mount("#app");
     </script>
