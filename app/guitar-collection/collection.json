@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "model": "Guitar #1",
+    "desc": "lorem ipsum"
+  },
+  {
+    "id": 2,
+    "model": "Guitar #2",
+    "desc": "lorem ipsum"
+  },
+  {
+    "id": 3,
+    "model": "Guitar #3",
+    "desc": "lorem ipsum"
+  }
+]
