@@ -4,7 +4,7 @@ const collection = [
     model: "Jack & Danny D160S",
     desc: "lorem ipsum",
     img: "./img/guitar1.png",
-    cost: 7800,
+    value: 7800,
     isNotBelong: true,
   },
   {
@@ -12,7 +12,7 @@ const collection = [
     model: "Paramount F-550BCEQN",
     desc: "lorem ipsum",
     img: "./img/guitar2.png",
-    cost: 3100,
+    value: 3100,
     isNotBelong: true,
   },
   {
@@ -20,7 +20,7 @@ const collection = [
     model: "Mclorence MC138",
     desc: "lorem ipsum",
     img: "./img/guitar3.png",
-    cost: 4000,
+    value: 4000,
     isNotBelong: true,
   },
   {
@@ -28,7 +28,7 @@ const collection = [
     model: "Ephiphone Special II",
     desc: "lorem ipsum",
     img: "./img/guitar4.png",
-    cost: 6300,
+    value: 6300,
     isNotBelong: true,
   },
   {
@@ -36,7 +36,7 @@ const collection = [
     model: "Future SG-45",
     desc: "lorem ipsum",
     img: "./img/guitar5.png",
-    cost: 7000,
+    value: 7000,
     isNotBelong: true,
   },
   {
@@ -44,7 +44,7 @@ const collection = [
     model: "Gibson Les Paul Standard '50s",
     desc: "lorem ipsum",
     img: "./img/guitar6.png",
-    cost: 85000,
+    value: 85000,
     isNotBelong: false,
   },
   {
@@ -52,7 +52,7 @@ const collection = [
     model: "Fender Stratocaster American Original '50s",
     desc: "lorem ipsum",
     img: "./img/guitar7.png",
-    cost: 72000,
+    value: 72000,
     isNotBelong: false,
   },
   {
@@ -60,7 +60,7 @@ const collection = [
     model: "Maison LP38",
     desc: "lorem ipsum",
     img: "./img/guitar8.png",
-    cost: 12000,
+    value: 12000,
     isNotBelong: true,
   },
   {
@@ -68,7 +68,7 @@ const collection = [
     model: "Gibson Les Paul Gothic Morte",
     desc: "lorem ipsum",
     img: "./img/guitar9.png",
-    cost: 40000,
+    value: 40000,
     isNotBelong: false,
   },
   {
@@ -76,7 +76,7 @@ const collection = [
     model: 'Fender Telecaster "3xbun" Signature',
     desc: "lorem ipsum",
     img: "./img/guitar10.png",
-    cost: 80000,
+    value: 80000,
     isNotBelong: false,
   },
   {
@@ -84,7 +84,7 @@ const collection = [
     model: 'Fender Telecaster "Jim Root" Signature',
     desc: "lorem ipsum",
     img: "./img/guitar11.png",
-    cost: 47000,
+    value: 47000,
     isNotBelong: true,
   },
   {
@@ -92,7 +92,7 @@ const collection = [
     model: 'Gibson SG 2013 "The Great Wave"',
     desc: "lorem ipsum",
     img: "./img/guitar12.png",
-    cost: 24000,
+    value: 24000,
     isNotBelong: false,
   },
   {
@@ -100,7 +100,7 @@ const collection = [
     model: 'Paramount Flying V "Ouija Board"',
     desc: "lorem ipsum",
     img: "./img/guitar13.png",
-    cost: 8000,
+    value: 8000,
     isNotBelong: false,
   },
   {
@@ -108,7 +108,7 @@ const collection = [
     model: "Gibson Les Paul Signature T Gold Series",
     desc: "lorem ipsum",
     img: "./img/guitar14.png",
-    cost: 58000,
+    value: 58000,
     isNotBelong: false,
   },
   {
@@ -116,7 +116,7 @@ const collection = [
     model: "Spear RD-W",
     desc: "lorem ipsum",
     img: "./img/guitar15.png",
-    cost: 8500,
+    value: 8500,
     isNotBelong: false,
   },
 ];
