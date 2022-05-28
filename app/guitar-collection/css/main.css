@@ -161,3 +161,8 @@ img {
     opacity: .8;
     transform: translate(35%, 20%) rotate(45deg);
 }
+
+.value {
+    font-size: 1rem;
+    text-align: left;
+}

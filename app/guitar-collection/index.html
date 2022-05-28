@@ -21,7 +21,19 @@
           <div class="title">
             <h1>
               3xbun's <br />
-              - GUITAR COLLECTION
+              - GUITAR COLLECTION {{time}}
+              <div class="value">
+                <table>
+                  <tr>
+                    <td>Total Value</td>
+                    <td>- {{totalValue.toLocaleString('th-TH')}}THB</td>
+                  </tr>
+                  <tr>
+                    <td>Current Value</td>
+                    <td>- {{currValue.toLocaleString('th-TH')}}THB</td>
+                  </tr>
+                </table>
+              </div>
             </h1>
           </div>
           <div class="newGuitar">
@@ -76,15 +88,48 @@
       import { createApp, ref } from "vue";
       import collection from "./collection.js";
 
-      collection.forEach((guitar) => {
-        console.log(guitar);
-      });
-
       createApp({
         setup() {
+          const date = new Date();
+          const second = date.getSeconds();
+
+          const updateGuitar = () => {
+            setInterval(() => {
+              updateGuitar();
+            }, 1000);
+
+            return collection[Math.floor(Math.random() * collection.length)];
+          };
+
+          const updateTime = () => {
+            time = date.getDate;
+          };
+
           const randomGuitar =
-            collection[Math.floor(Math.random() * collection.length)];
-          return { collection, randomGuitar };
+            collection[
+              Math.floor(
+                Math.random() * collection.length * (date.getSeconds() / 60)
+              )
+            ];
+
+          const time = date.getSeconds();
+
+          setInterval(() => {
+            updateTime;
+          }, 1000);
+
+          let currValue = 0;
+          let totalValue = 0;
+
+          collection.forEach((item) => {
+            totalValue += item.value;
+
+            if (item.isNotBelong === false) {
+              currValue += item.value;
+            }
+          });
+
+          return { collection, randomGuitar, totalValue, currValue, time };
         },
       }).mount("#app");
     </script>
