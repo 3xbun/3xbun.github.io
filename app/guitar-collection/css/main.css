@@ -166,3 +166,30 @@ img {
     font-size: 1rem;
     text-align: left;
 }
+
+@media screen and (min-width: 600px) {
+    #hero .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .newGuitar {
+        width: 85vw;
+        overflow: hidden;
+    }
+
+    .newGuitar img{
+        height: 50vh;
+    }
+
+    .item {
+        flex-basis: 30%;
+    }
+    
+    .value {
+        margin: auto;
+        font-size: .5em;
+    }
+
+  }

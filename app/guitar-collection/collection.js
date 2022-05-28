@@ -120,5 +120,3 @@ const collection = [
     isNotBelong: false,
   },
 ];
-
-export default collection;

@@ -68,25 +68,11 @@
       </div>
     </div>
 
-    <script type="importmap">
-      {
-        "imports": {
-          "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
-        }
-      }
-    </script>
-    <script type="importmap">
-      {
-        "imports": {
-          "vue": "https://unpkg.com/vue@3/dist/vue.esm-browser.js"
-        }
-      }
-    </script>
-    <script src="./collection.json"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="./collection.js"></script>
 
-    <script type="module">
-      import { createApp, ref } from "vue";
-      import collection from "./collection.js";
+    <script>
+      const { createApp } = Vue;
 
       createApp({
         setup() {
