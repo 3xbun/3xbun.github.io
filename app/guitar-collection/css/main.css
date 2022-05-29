@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@200;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Prompt', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+h1 {
+    font-weight: 200;
+}
+
+body {
+    background: url("https://img.freepik.com/free-vector/white-abstract-background-design_23-2148825582.jpg");
+}
+
+#hero {
+    margin-top: 3em;
+}
+
+#hero .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    flex-basis: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 800px;
+    width: 85vw;
+    margin: auto;
+}
+
+.newGuitar {
+    height: 50vh;
+    flex-basis: 30%;
+}
+
+.view {
+    background-color: red;
+    color: white;
+    padding: .5em 1em;
+    cursor: pointer;
+}
+
+.newGuitar .view {
+    position: absolute;
+    left: 50vw;
+    top: 45vh;
+    border-radius: 1em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.newGuitar .view:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.newGuitar .new {
+    position: absolute;
+    top: 10vh;
+    left: 40vw;
+    font-weight: bold;
+}
+
+img {
+    height: 100%;
+}
+
+.randGuitar {
+    flex-basis: 30%;
+    text-align: center;
+}
+
+#collection {
+    margin-top: 3em;
+}
+
+.guitar-list {
+    background: white;
+    width: 100%;
+    display: flex;
+    padding: 1em;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 3em;
+    border-radius: 1em;
+}
+
+.item {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.item-img {
+    height: 5em;
+    width: 5em;
+    background-color: lightgrey;
+    border-radius: 1em;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.item-img img {
+    height: 200%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+
+.card {
+    max-width: 180px;
+    background: white;
+    width: 85%;
+    text-align: center;
+    margin: auto;
+    border-radius: 1em;
+    padding: .5em 0 .5em;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.card-img {
+    height: 10em;
+    margin: .5em 1em;
+}
+
+.card p {
+    border-top: 1px solid lightgrey;
+    padding: .5em 1em;
+}
+
+.card .view {
+    margin-bottom: .5em;
+}
+
+.sold-out {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    z-index: 99;
+    padding: 0 .5em;
+    top: 0;
+    right: 0;
+    width: 150%;
+    opacity: .8;
+    transform: translate(35%, 20%) rotate(45deg);
+}
+
+.value {
+    font-size: 1rem;
+    text-align: left;
+}
+
+@media screen and (min-width: 600px) {
+    #hero .container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .newGuitar {
+        width: 85vw;
+        overflow: hidden;
+    }
+
+    .newGuitar img{
+        height: 50vh;
+    }
+
+    .item {
+        flex-basis: 30%;
+    }
+    
+    .value {
+        margin: auto;
+        font-size: .5em;
+    }
+
+  }
